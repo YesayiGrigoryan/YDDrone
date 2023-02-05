@@ -1,0 +1,211 @@
+.block_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 150px;
+}
+
+.block_info_more {
+  display: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 27px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.block_info_more.active {
+  display: block;
+}
+
+.block_info_more_title.active {
+  display: none;
+}
+
+.block_info_more1 {
+  display: none;
+}
+
+.block_info_more1.active {
+  display: block;
+}
+
+.block_info_more_title1.active {
+  display: none;
+}
+
+.block_info_more2 {
+  display: none;
+}
+
+.block_info_more2.active {
+  display: block;
+}
+
+.block_info_more_title2.active {
+  display: none;
+}
+
+.block_info_more3 {
+  display: none;
+}
+
+.block_info_more3.active {
+  display: block;
+}
+
+.block_info_more_title3.active {
+  display: none;
+}
+
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.cta:active svg {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  top: 2px;
+  padding-bottom: 40px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2.3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffb21d;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.bay {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+}
+
+.bay:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffb21d;
+  position: absolute;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.bay:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.bay span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  z-index: 20;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bay:hover span {
+  color: #183153;
+  -webkit-animation: scaleUp 0.3s ease-in-out;
+          animation: scaleUp 0.3s ease-in-out;
+}
+
+@-webkit-keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
